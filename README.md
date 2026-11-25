@@ -25,8 +25,8 @@
  
 ## 📖 About the project
  
-ADSTA automatically builds an **isolated, reproducible** test environment in **Microsoft Azure** and compares how an unprotected system and a protected system respond to the same tests.
- 
+This project builds an **isolated, reproducible** test environment in **Microsoft Azure** with Terraform, Packer and Ansible. The **ADSTA** application runs on the Kali Linux machine and compares how an unprotected system and a protected system respond to the same tests.
+
 The environment has **three virtual machines**: a **Kali Linux** attack machine that runs the ADSTA application, and two **Windows Server 2025** targets that host the same vulnerable web application, **DVWA**, configured differently:
  
 - **Vulnerable Windows**: firewall disabled, DVWA security level `low`, all traffic from the Kali subnet allowed;
